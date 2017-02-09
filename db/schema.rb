@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 20170208195110) do
     t.integer  "user_id"
     t.float    "latitude"
     t.float    "longitude"
-    t.index ["user_id"], name: "index_places_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
